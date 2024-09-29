@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+    
+    <title>moreru</title>
+
+    <h1 class="title">moreru</h1>
+
+</head>
+
+
+<body>
+
+
+<div class="imagearea"></div>
+
+<a href="index.html"><img src="images/top_img.png" alt="" class="refresh_btn"></a>
+
+<script>
+    const imageArea = document.querySelector(".imagearea");
+    
+    // 配列に画像のファイルパスと対応するテキストを格納する
+    const imgData = [
+        {path: "images/0.JPG", text: "hahahahhhha"},
+        {path: "images/1.JPG", text: "破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊"},
+        {path: "images/2.JPG", text: "texttexttexttext"},
+        {path: "images/3.JPG", text: "aaaaaaaaaaaaaaaaaaaa"},
+        {path: "images/4.JPG", text: "ああああああああああああああ"}
+    ];
+    
+    // 配列の長さを取得
+    const arrayNum = imgData.length;
+    
+    // ランダムな値を生成して画像とテキストを選択
+    let Ran = Math.random(); 
+    let Num = Math.floor(Ran * arrayNum);
+    
+    // 選択した画像とテキストを挿入
+    imageArea.innerHTML = `
+        <div>
+            <img src="${imgData[Num].path}" alt="random image">
+            <p class="image-text">${imgData[Num].text}</p>
+        </div>`;
+</script>
+    
+</body>
+
+
+<footer class="footer">破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊破壊
+</footer>
+</html>

@@ -1,0 +1,72 @@
+
+
+body{
+    width: 100%;
+    background-image: url(..//images/background.png);
+  background-repeat: repeat;
+    /* background-size: cover; */
+  
+    
+}
+
+.title{
+    font-size: 180px;
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    letter-spacing: 90px;
+}
+
+.imagearea{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack images and text vertically */
+    align-items: center; 
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px; /* Padding applied to the container */
+    
+
+}
+
+.imagearea img {
+    padding: 10px; /* Adds padding inside the image border */
+    border: 10px solid red; /* Adds a 10px red border around the image */
+    box-sizing: border-box; /* Ensures the padding and border are included in the image's total width */
+    width: 100%; 
+    max-width: 590px; 
+    height: auto;
+    background-color: red;
+}
+
+
+.image-text {
+    font-size: 28px;
+    color: #f30808;
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px;
+    border: 10px solid rgb(255, 255, 255); 
+    box-sizing: border-box; 
+    background-color: white;
+    max-width: 590px; /* Ensures the text width matches the image width */
+    width: 100%; /* Makes the text responsive */
+}
+
+
+.refresh_btn{
+    width: 28%;
+    height: auto;
+    position: absolute;
+    top: 500px;
+}
+
+
+
+.footer{
+    font-size: 15px;
+    color: white;
+    margin: 60px 0 20px 0;
+    text-align: center;
+}
